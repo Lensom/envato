@@ -1,0 +1,435 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1650px)
+	.btn-up
+		right: 150px
+
+
+@media only screen and (max-width : 1200px)
+	/**/
+	.welcome
+		form
+			input
+				width: 310px
+
+	.btn-up
+		right: 40px
+
+	header
+		.icons
+			max-width: 60%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	header
+		.icons
+			top: 30px
+		.timer
+			p.hours
+				font-size: 98px
+				padding-left: 16px
+				// span.days
+				// 	&:after
+				// 		left: 75px
+				// span.hours
+				// 	&:after
+				// 		left: 232px
+				// span.minutes
+				// 	&:after
+				// 		left: 388px
+				// span.seconds
+				// 	&:after
+				// 		left: 556px
+				span
+					padding: 0 15px
+				span.days
+					&:after
+						left: 196px
+						bottom: 34px
+				span.hours
+					&:after
+						left: 357px
+						bottom: 34px
+				span.minutes
+					&:after
+						left: 517px
+						bottom: 34px
+			p.description
+				margin-top: -38px
+				left: 24px
+				position: relative
+				span
+					font-size: 25px
+					padding-right: 50px
+					&:first-child
+						padding-right: 90px
+					&:nth-child(4)
+						position: relative
+						left: -12px
+						padding-right: 0
+
+	.welcome
+		form
+			width: auto
+			padding: 20px 10px 15px 12px;
+			input
+				width: auto
+			h2
+				font-size: 22px
+
+	.table-info
+		table
+			tbody
+				tr
+					th
+						padding: 13px 24px 13px 16px
+					td
+						font-size: 18px
+						&:nth-child(1)
+							padding-right: 0
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	header
+		.icons
+			max-width: 100%
+			top: 37px
+		.timer
+			margin-bottom: 55px
+			p.hours
+				font-size: 78px
+				padding-top: 20px
+				// span.days
+				// 	&:after
+				// 		left: 38px
+				// 		font-size: 20px
+				// span.hours
+				// 	&:after
+				// 		left: 170px
+				// 		font-size: 20px
+				// span.minutes
+				// 	&:after
+				// 		left: 294px
+				// 		font-size: 20px
+				// span.seconds
+				// 	&:after
+				// 		left: 430px
+				// 		font-size: 20px
+				span
+					padding: 0 8px
+				span.days
+					&:after
+						left: 146px
+						bottom: 26px
+				span.hours
+					&:after
+						left: 267px
+						bottom: 26px
+				span.minutes
+					&:after
+						left: 385px
+						bottom: 26px
+			p.description
+				margin-top: -20px
+				span
+					font-size: 20px
+					color: $white
+					&:first-child
+						position: relative
+						left: 5px
+						padding-right: 60px
+					&:nth-child(4)
+						position: relative
+						left: -12px
+						padding-right: 0
+
+	.welcome
+		h2
+			text-align: center
+		form
+			margin: 0 auto
+			margin-top: 40px
+			input
+				width: 410px
+		.pluses
+			margin-top: 80px
+			margin-bottom: 40px
+
+	.table-info
+		table
+			tbody
+				tr
+					td
+						font-size: 14px
+						padding-left: 10px
+				tr
+					th
+						font-size: 20px
+		br
+			display: none
+
+	.btn-up
+		right: 12px
+
+
+@media only screen and (max-width: 576px)
+	
+	header
+		.timer
+			width: 500px
+			p.hours
+				font-size: 60px
+				// span.days
+				// 	&:after
+				// 		left: 75px
+				// 		font-size: 12px
+				// span.hours
+				// 	&:after
+				// 		left: 174px
+				// 		font-size: 12px
+				// span.minutes
+				// 	&:after
+				// 		left: 273px
+				// 		font-size: 12px
+				// span.seconds
+				// 	&:after
+				// 		left: 378px
+				// 		font-size: 12px
+				span
+					padding: 0 8px
+				span.days
+					&:after
+						font-size: 60px
+						left: 146px
+						bottom: 26px
+				span.hours
+					&:after
+						font-size: 60px
+						left: 244px
+						bottom: 26px
+				span.minutes
+					&:after
+						font-size: 60px
+						left: 337px
+						bottom: 26px
+			p.description
+				margin-top: -20px
+				span
+					font-size: 16px
+					padding-right: 30px
+					&:first-child
+						position: relative
+						left: -15px
+						padding-right: 30px
+					&:nth-child(4)
+						position: relative
+						left: -12px
+						padding-right: 0
+
+	.btn-up
+		width: 30px
+		height: 30px
+		&:after
+    	width: 20px
+    	height: 20px
+    	border-top: 2px solid #212121
+    	border-left: 2px solid #212121
+
+@media only screen and (max-width : 538px)
+	header
+		.navbar-brand
+			margin: 0 auto
+		ul.nav
+			margin: 0 auto
+		.timer
+			width: 400px
+			p.hours
+				font-size: 50px
+				// span.days
+				// 	&:after
+				// 		left: 53px
+				// 		font-size: 12px
+				// span.hours
+				// 	&:after
+				// 		left: 136px
+				// 		font-size: 12px
+				// span.minutes
+				// 	&:after
+				// 		left: 216px
+				// 		font-size: 12px
+				// span.seconds
+				// 	&:after
+				// 		left: 301px
+				// 		font-size: 12px
+				span
+					padding: 0 8px
+				span.days
+					&:after
+						font-size: 60px
+						left: 110px
+						bottom: 20px
+				span.hours
+					&:after
+						font-size: 60px
+						left: 192px
+						bottom: 20px
+				span.minutes
+					&:after
+						font-size: 60px
+						left: 274px
+						bottom: 20px
+			p.description
+				margin-top: -20px
+				span
+					font-size: 14px
+					padding-right: 20px
+					&:first-child
+						position: relative
+						left: -22px
+						padding-right: 16px
+					&:nth-child(4)
+						position: relative
+						left: -12px
+						padding-right: 0
+
+	.table-info
+		table
+			tbody
+				td
+					font-size: 14px
+				tr
+					th
+						font-size: 18px
+
+	.welcome
+		.pluses
+			margin-top: 40px
+			margin-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.welcome
+		form
+			input
+				width: auto
+			.button-wrap
+				button.btn.btn-submit
+					width: 37%
+
+	.table-info
+		table
+			tbody
+				tr
+					td
+						font-size: 12px
+				tr
+					th
+						font-size: 16px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 410px)
+	/**/
+	header
+		.timer
+			width: 300px
+			margin-top: 30px
+			margin-bottom: 20px
+			p.hours
+				font-size: 34px
+				padding-left: 8px
+				margin-top: -17px
+				// span.days
+				// 	&:after
+				// 		left: 23px
+				// 		bottom: 10px
+				// span.hours
+				// 	&:after
+				// 		left: 93px
+				// 		bottom: 10px
+				// span.minutes
+				// 	&:after
+				// 		left: 156px
+				// 		bottom: 10px
+				// span.seconds
+				// 	&:after
+				// 		left: 231px
+				// 		bottom: 10px
+				span
+					padding: 0 8px
+				span.days
+					&:after
+						font-size: 30px
+						left: 88px
+						bottom: 32px
+				span.hours
+					&:after
+						font-size: 30px
+						left: 149px
+						bottom: 32px
+				span.minutes
+					&:after
+						font-size: 30px
+						left: 211px
+						bottom: 32px
+			p.description
+				margin-top: -14px
+				span
+					font-size: 10px
+					padding-right: 16px
+					&:first-child
+						position: relative
+						left: -22px
+						padding-right: 6px
+					&:nth-child(4)
+						position: relative
+						left: -5px
+	
+	.welcome
+		form
+			.button-wrap
+				button.btn.btn-submit
+					font-size: 18px
+
+	footer
+		p
+			line-height: 24px
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

@@ -1,0 +1,811 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1
+}
+
+:-moz-placeholder {
+  color: #666;
+  opacity: 1
+}
+
+::-moz-placeholder {
+  color: #666;
+  opacity: 1
+}
+
+:-ms-input-placeholder {
+  color: #666;
+  opacity: 1
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  border: 1px solid red;
+  color: #6c6c6c
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  border: 1px solid #90d23d;
+  color: #6c6c6c
+}
+
+body,
+html {
+  height: 100%
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: "Roboto Slab", sans-serif;
+  overflow-x: hidden
+}
+
+.btn-up {
+  position: fixed;
+  bottom: -50px;
+  right: 310px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  z-index: 9999;
+  cursor: pointer;
+  outline: 0!important;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s
+}
+
+.btn-up:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-top: 5px solid #212121;
+  border-left: 5px solid #212121;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto
+}
+
+.btn-up.active {
+  bottom: 50px
+}
+
+img {
+  max-width: 100%
+}
+
+::-moz-selection {
+  background-color: #accef7;
+  color: #fff
+}
+
+::selection {
+  background-color: #accef7;
+  color: #fff
+}
+
+input.form-input {
+  font-size: 19px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #bebebe;
+  width: 373px;
+  border: 1px solid #bebebe;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  -webkit-appearance: none
+}
+
+input.form-input:hover {
+  -webkit-box-shadow: 0 0 20px #90d23d;
+  box-shadow: 0 0 20px #90d23d
+}
+
+input.form-input:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+header {
+  background-color: #21202a;
+  max-height: 765px
+}
+
+header .logo {
+  padding-top: 33px
+}
+
+header .menu {
+  padding-top: 40px
+}
+
+header ul.nav {
+  padding: 0;
+  margin: 0;
+  padding-top: 40px
+}
+
+header ul.nav li.nav-item a.nav-link {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;  
+}
+
+header .menu .menu-item {
+  display: inline-block;
+}
+
+header .menu .menu-item a {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  padding: .5rem 1rem;
+}
+
+header ul.nav li.nav-item a.nav-link:hover {
+  color: #bdb7f7
+}
+
+header .menu .menu-item a:hover {
+  color: #bdb7f7;
+  text-decoration: none;
+}
+
+header .icons {
+  position: relative;
+  top: 37px;
+  z-index: 100
+}
+
+header .timer {
+  border: 2px solid #90d23d;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 972px;
+  margin: 0 auto;
+  margin-bottom: 148px;
+  margin-top: 104px
+}
+
+header .timer .time {
+  display: inline-block;
+  margin-bottom: 14px
+}
+
+header .timer .time p {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  font-size: 130px;
+  color: #fff;
+  padding: 0 34px;
+  margin: -32px 0 -36px 0
+}
+
+header .timer .time p.days:after {
+  content: ":";
+  font-size: 130px;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 26px;
+  left: 260px
+}
+
+header .timer .time p.hours:after {
+  content: ":";
+  font-size: 130px;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 26px;
+  left: 477px
+}
+
+header .timer .time p.minutes:after {
+  content: ":";
+  font-size: 130px;
+  color: #fff;
+  font-weight: 100;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 26px;
+  right: 252px
+}
+
+header .timer .time span {
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase
+}
+
+.welcome {
+  position: relative;
+  z-index: 1020;
+  padding-top: 50px;
+  background-color: #fff
+}
+
+.welcome h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: #242424
+}
+
+.welcome p {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #242424;
+  font-size: 14px;
+  margin-bottom: 8px;
+  max-width: 527px
+}
+
+.welcome form {
+  text-align: center;
+  max-width: 434px;
+  border: 1px solid #dbdada;
+  border-bottom: 2px solid #949293;
+  padding: 28px 30px 17px 30px;
+  margin-top: -270px;
+  background-color: #fff;
+  -ms-input-placeholder-color: #bebebe
+}
+
+.welcome form h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #252525;
+  font-size: 30px;
+  margin-bottom: 16px
+}
+
+.welcome form::-webkit-input-placeholder {
+  color: #bebebe;
+  opacity: 1
+}
+
+.welcome form::-moz-placeholder {
+  color: #bebebe;
+  opacity: 1
+}
+
+.welcome form::-ms-input-placeholder {
+  color: #bebebe;
+  opacity: 1
+}
+
+.welcome form::placeholder {
+  color: #bebebe;
+  opacity: 1
+}
+
+.welcome form::-ms-input-placeholder {
+  color: #bebebe
+}
+
+.welcome form .button-wrap {
+  margin-bottom: 15px
+}
+
+.welcome form .button-wrap .btn.btn-submit {
+  background-color: #90d23d;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  padding: 7px 3px
+}
+
+.welcome form .button-wrap .btn.btn-submit:hover {
+  border: 2px solid #90d23d;
+  padding: 5px 1px;
+  color: #90d23d;
+  background-color: #fff
+}
+
+.welcome form p {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #6c6c6c;
+  margin-bottom: 0
+}
+
+.welcome .pluses {
+  margin-top: 130px;
+  text-align: center;
+  margin-bottom: 93px
+}
+
+.welcome .pluses h2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  color: #242424;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 12px
+}
+
+.welcome .pluses p {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  max-width: 300px;
+  margin: 0 auto
+}
+
+.welcome .talk img {
+  margin-top: 12px
+}
+
+.welcome .stories img {
+  margin-top: 10px
+}
+
+.table-info {
+  margin-bottom: 72px;
+  background-color: transparent
+}
+
+.table-info table {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+  margin-bottom: 35px
+}
+
+.table-info table tbody th {
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 30px;
+  background-color: #a3cc40;
+  padding: 13px 90px 13px 0
+}
+
+.table-info table tbody th:nth-child(1) {
+  text-align: center
+}
+
+.table-info table tbody th:nth-child(2) {
+  padding-left: 16px
+}
+
+.table-info table tbody tr {
+  background-color: #333
+}
+
+.table-info table tbody tr:nth-child(3) {
+  background-color: #4b4d4f
+}
+
+.table-info table tbody tr:nth-child(5) {
+  background-color: #4b4d4f
+}
+
+.table-info table tbody tr td {
+  font-size: 22px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  padding: 20px 0
+}
+
+.table-info table tbody tr td:nth-child(1) {
+  padding-right: 90px
+}
+
+.table-info table tbody tr td:nth-child(2) {
+  padding-left: 16px
+}
+
+.table-info p {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: #242424;
+  font-size: 14px;
+  margin: 0
+}
+
+footer {
+  background-color: #90d23d;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 34px
+}
+
+footer ul.list-inline {
+  margin: 0;
+  margin-bottom: 40px
+}
+
+footer ul.list-inline li.list-inline-item:hover {
+  background-color: #21202a;
+  -webkit-border-radius: 50%;
+  border-radius: 50%
+}
+
+footer .footer-info {
+  margin-top: -20px
+}
+
+footer .footer-info p {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 0
+}
+
+.facebook,
+.google_plus,
+.linkedin,
+.tumblr,
+.twitter {
+  background: url(../img/icons.png) no-repeat 10000px 10000px;
+  position: relative;
+  display: block
+}
+
+.google_plus {
+  background-position: -1px 0;
+  width: 47px;
+  height: 48px
+}
+
+.linkedin {
+  background-position: -151px 0;
+  width: 47px;
+  height: 48px
+}
+
+.tumblr {
+  background-position: -101px 0;
+  width: 47px;
+  height: 47px
+}
+
+.twitter {
+  background-position: -51px 0;
+  width: 47px;
+  height: 47px
+}
+
+.facebook {
+  background-position: -201px 0;
+  width: 47px;
+  height: 47px
+}
+
+.form-input.wpcf7-not-valid {
+  border: 1px solid rgba(224, 130, 131, 1)
+}
+
+@media only screen and (max-width:1650px) {
+  .btn-up {
+      right: 150px
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .welcome form input {
+      width: 310px
+  }
+  .btn-up {
+      right: 40px
+  }
+  header .icons {
+      max-width: 60%
+  }
+}
+
+@media only screen and (max-width:992px) {
+  header .icons {
+      top: 30px
+  }
+  header .timer .time p {
+      font-size: 100px;
+      padding: 0 20px
+  }
+  header .timer .time p.days:after {
+      font-size: 100px;
+      bottom: 26px;
+      left: 200px
+  }
+  header .timer .time p.hours:after {
+      font-size: 100px;
+      bottom: 26px;
+      left: 350px
+  }
+  header .timer .time p.minutes:after {
+      font-size: 100px;
+      bottom: 26px;
+      right: 193px
+  }
+  .welcome form {
+      width: auto;
+      padding: 20px 10px 15px 12px
+  }
+  .welcome form input {
+      width: auto;
+      width: 245px
+  }
+  .welcome form h2 {
+      font-size: 22px
+  }
+  .table-info table tbody tr th {
+      padding: 13px 24px 13px 16px
+  }
+  .table-info table tbody tr td {
+      font-size: 18px
+  }
+  .table-info table tbody tr td:nth-child(1) {
+      padding-right: 0
+  }
+}
+
+@media only screen and (max-width:768px) {
+  header .icons {
+      max-width: 100%;
+      top: 37px
+  }
+  header .timer {
+      margin-bottom: 55px
+  }
+  header .timer .time {
+      margin: 0
+  }
+  header .timer .time p {
+      font-size: 80px;
+      padding: 0 10px;
+      margin-top: -15px
+  }
+  header .timer .time span {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 20px
+  }
+  header .timer .time p.days:after {
+      font-size: 80px;
+      bottom: 40px;
+      left: 152px
+  }
+  header .timer .time p.hours:after {
+      font-size: 80px;
+      bottom: 40px;
+      left: 263px
+  }
+  header .timer .time p.minutes:after {
+      font-size: 80px;
+      bottom: 40px;
+      right: 148px
+  }
+  .welcome h2 {
+      text-align: center
+  }
+  .welcome form {
+      margin: 0 auto;
+      margin-top: 40px
+  }
+  .welcome form input {
+      width: 410px
+  }
+  .welcome .pluses {
+      margin-top: 80px;
+      margin-bottom: 40px
+  }
+  .table-info table tbody tr td {
+      font-size: 14px;
+      padding-left: 10px
+  }
+  .table-info table tbody tr th {
+      font-size: 20px
+  }
+  .table-info br {
+      display: none
+  }
+  .btn-up {
+      right: 12px
+  }
+}
+
+@media only screen and (max-width:576px) {
+  header .timer {
+      width: 500px
+  }
+  header .timer .time p.days:after {
+      bottom: 40px;
+      left: 131px
+  }
+  header .timer .time p.hours:after {
+      bottom: 40px;
+      left: 243px
+  }
+  header .timer .time p.minutes:after {
+      bottom: 40px;
+      right: 128px
+  }
+  .btn-up {
+      width: 30px;
+      height: 30px
+  }
+  .btn-up:after {
+      width: 20px;
+      height: 20px;
+      border-top: 2px solid #212121;
+      border-left: 2px solid #212121
+  }
+  header .menu {
+    padding: 0;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .menu-top-menu-container {
+    width: 100%;
+  }
+
+  .logotype {
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width:538px) {
+  header .navbar-brand {
+      margin: 0 auto
+  }
+  header .menu {
+    margin: 0 auto;
+  }
+  header ul.nav {
+      margin: 0 auto
+  }
+  header .timer {
+      width: 400px
+  }
+  header .timer .time p {
+      font-size: 62px;
+      padding: 0 10px;
+      margin-top: -15px
+  }
+  header .timer .time span {
+      font-size: 14px
+  }
+  header .timer .time p.days:after {
+      font-size: 60px;
+      bottom: 34px;
+      left: 103px
+  }
+  header .timer .time p.hours:after {
+      font-size: 60px;
+      bottom: 34px;
+      left: 194px
+  }
+  header .timer .time p.minutes:after {
+      font-size: 60px;
+      bottom: 34px;
+      right: 100px
+  }
+  .table-info table tbody td {
+      font-size: 14px
+  }
+  .table-info table tbody tr th {
+      font-size: 18px
+  }
+  .welcome .pluses {
+      margin-top: 40px;
+      margin-bottom: 20px
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .welcome form input {
+      width: 100%;
+  }
+  .welcome form .button-wrap .btn.btn-submit {
+      width: 37%
+  }
+  .table-info table tbody tr td {
+      font-size: 12px
+  }
+  .table-info table tbody tr th {
+      font-size: 16px
+  }
+  .welcome form {
+    margin: 40px auto 0;
+  }
+}
+
+@media only screen and (max-width:410px) {
+  header .timer {
+      width: 300px;
+      margin-top: 30px;
+      margin-bottom: 20px
+  }
+  header .timer .time {
+      margin-bottom: 0
+  }
+  header .timer .time p {
+      font-size: 38px;
+      padding: 0 10px;
+      margin-top: 0
+  }
+  header .timer .time span {
+      font-size: 12px;
+      margin-top: 25px
+  }
+  header .timer .time p.days:after {
+      font-size: 40px;
+      bottom: 28px;
+      left: 79px
+  }
+  header .timer .time p.hours:after {
+      font-size: 40px;
+      bottom: 28px;
+      left: 146px
+  }
+  header .timer .time p.minutes:after {
+      font-size: 40px;
+      bottom: 28px;
+      right: 78px
+  }
+  .welcome form .button-wrap .btn.btn-submit {
+      font-size: 18px
+  }
+  footer p {
+      line-height: 24px
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:2),
+screen and (-moz-device-pixel-ratio:2) {
+  .facebook,
+  .google_plus,
+  .linkedin,
+  .tumblr,
+  .twitter {
+      background-image: url(../img/iconsx2.png);
+      -webkit-background-size: 640px 640px;
+      background-size: 640px
+  }
+}

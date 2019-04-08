@@ -1,0 +1,633 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+::-webkit-input-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+:-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+::-moz-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #666;
+    opacity: 1
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+    border: 1px solid red!important;
+    color: #6c6c6c
+}
+
+body input:required:valid,
+body textarea:required:valid {
+    border: 1px solid #90d23d!important;
+    color: #6c6c6c
+}
+
+body,
+html {
+    height: 100%
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: "Roboto Slab", sans-serif;
+    overflow-x: hidden
+}
+
+.btn_up {
+    position: fixed;
+    bottom: -50px;
+    right: 310px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    z-index: 9999;
+    cursor: pointer;
+    outline: 0!important;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s
+}
+
+.btn_up:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #212121;
+    border-left: 5px solid #212121;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 4px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+.btn_up.active {
+    bottom: 50px
+}
+
+img {
+    max-width: 100%
+}
+
+::-moz-selection {
+    background-color: orange;
+    color: #fff
+}
+
+::selection {
+    background-color: orange;
+    color: #fff
+}
+
+header {
+    background-color: #21202a;
+    max-height: 765px
+}
+
+header .logo {
+    padding-top: 33px
+}
+
+header ul.nav {
+    padding-top: 40px
+}
+
+header ul.nav li.nav-item a.nav-link {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase
+}
+
+header ul.nav li.nav-item a.nav-link:hover {
+    color: #bdb7f7
+}
+
+header .icons {
+    position: relative;
+    top: 37px;
+    z-index: 100
+}
+
+header .timer {
+    border: 2px solid #90d23d;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 972px;
+    margin: 0 auto;
+    margin-bottom: 148px;
+    margin-top: 104px
+}
+
+header .timer p.hours {
+    font-weight: 100;
+    font-size: 130px;
+    color: #fff;
+    margin-top: -32px
+}
+
+header .timer p.hours span.days:after {
+    content: "days";
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 16px;
+    left: 116px
+}
+
+header .timer p.hours span.hours:after {
+    content: "hours";
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 16px;
+    left: 330px
+}
+
+header .timer p.hours span.minutes:after {
+    content: "minutes";
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 16px;
+    left: 544px
+}
+
+header .timer p.hours span.seconds:after {
+    content: "seconds";
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 16px;
+    left: 768px
+}
+
+.welcome {
+    position: relative;
+    z-index: 1020;
+    padding-top: 50px;
+    background-color: #fff
+}
+
+.welcome h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: #242424
+}
+
+.welcome p {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: #242424;
+    font-size: 14px;
+    margin-bottom: 8px;
+    max-width: 527px
+}
+
+.welcome form {
+    text-align: center;
+    max-width: 434px;
+    border: 1px solid #dbdada;
+    border-bottom: 2px solid #949293;
+    padding: 28px 30px 17px 30px;
+    margin-top: -270px;
+    background-color: #fff
+}
+
+.welcome form h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: #252525;
+    font-size: 30px;
+    margin-bottom: 16px
+}
+
+.welcome form label {
+    -ms-input-placeholder-color: #bebebe
+}
+
+.welcome form label input {
+    font-size: 19px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: #bebebe;
+    width: 373px;
+    border: 1px solid #bebebe;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin-bottom: 10px
+}
+
+.welcome form label input:hover {
+    -webkit-box-shadow: 0 0 20px #90d23d;
+    box-shadow: 0 0 20px #90d23d
+}
+
+.welcome form label input:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.welcome form label::-webkit-input-placeholder {
+    color: #bebebe;
+    opacity: 1
+}
+
+.welcome form label::-moz-placeholder {
+    color: #bebebe;
+    opacity: 1
+}
+
+.welcome form label:-ms-input-placeholder {
+    color: #bebebe;
+    opacity: 1
+}
+
+.welcome form label::-ms-input-placeholder {
+    color: #bebebe;
+    opacity: 1
+}
+
+.welcome form label::placeholder {
+    color: #bebebe;
+    opacity: 1
+}
+
+.welcome form label::-ms-input-placeholder {
+    color: #bebebe
+}
+
+.welcome form .button_wrap {
+    margin-bottom: 15px
+}
+
+.welcome form .button_wrap button.btn.btn-submit {
+    background-color: #90d23d;
+    width: 100%;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    padding: 7px 3px
+}
+
+.welcome form .button_wrap button.btn.btn-submit:hover {
+    border: 2px solid #90d23d;
+    padding: 5px 1px;
+    color: #90d23d;
+    background-color: #fff
+}
+
+.welcome form p {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6c6c6c;
+    margin-bottom: 0
+}
+
+.welcome .pluses {
+    margin-top: 130px;
+    text-align: center;
+    margin-bottom: 93px
+}
+
+.welcome .pluses h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    color: #242424;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 12px
+}
+
+.welcome .pluses p {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    max-width: 300px;
+    margin: 0 auto
+}
+
+.welcome .pluses:hover img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: 1.2s;
+    -o-transition: 1.2s;
+    transition: 1.2s
+}
+
+.welcome .talk img {
+    margin-top: 12px
+}
+
+.welcome .stories img {
+    margin-top: 10px
+}
+
+.table_info {
+    margin-bottom: 72px
+}
+
+.table_info table {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    margin-bottom: 35px
+}
+
+.table_info table tbody td {
+    font-size: 22px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px 0
+}
+
+.table_info table tbody tr.caption td {
+    font-family: Roboto, sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 30px;
+    background-color: #a3cc40;
+    padding: 13px 90px 13px 0
+}
+
+.table_info table tbody td.time {
+    text-align: center;
+    padding-right: 90px
+}
+
+.table_info table tbody tr {
+    background-color: #333
+}
+
+.table_info table tbody tr td.event {
+    padding-left: 16px
+}
+
+.table_info table tbody tr.toggle {
+    background-color: #4b4d4f
+}
+
+.table_info p {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: #242424;
+    font-size: 14px;
+    margin: 0
+}
+
+footer {
+    background-color: #90d23d;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 34px
+}
+
+footer ul.list-inline {
+    margin: 0;
+    margin-bottom: 35px
+}
+
+footer ul.list-inline li.list-inline-item:hover {
+    background-color: #21202a;
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+}
+
+footer ul.list-inline li.list-inline-item:hover a img {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg)
+}
+
+footer p {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    line-height: 5px
+}
+
+@media only screen and (max-width:1200px) {
+    .welcome form label input {
+        width: 310px
+    }
+    .btn_up {
+        right: 140px
+    }
+}
+
+@media only screen and (max-width:992px) {
+    header .timer p.hours {
+        font-size: 98px
+    }
+    header .timer p.hours span.days:after {
+        left: 75px
+    }
+    header .timer p.hours span.hours:after {
+        left: 232px
+    }
+    header .timer p.hours span.minutes:after {
+        left: 388px
+    }
+    header .timer p.hours span.seconds:after {
+        left: 556px
+    }
+    .welcome form {
+        width: auto;
+        padding: 20px 10px 15px 12px
+    }
+    .welcome form label input {
+        width: auto
+    }
+    .welcome form h2 {
+        font-size: 22px
+    }
+    .table_info table tbody tr.caption td {
+        padding: 13px 24px 13px 16px
+    }
+    .table_info table tbody td.time {
+        padding-right: 24px
+    }
+}
+
+@media only screen and (max-width:768px) {
+    header .timer {
+        margin-bottom: 55px
+    }
+    header .timer p.hours {
+        font-size: 78px;
+        padding-top: 20px
+    }
+    header .timer p.hours span.days:after {
+        left: 38px;
+        font-size: 20px
+    }
+    header .timer p.hours span.hours:after {
+        left: 170px;
+        font-size: 20px
+    }
+    header .timer p.hours span.minutes:after {
+        left: 294px;
+        font-size: 20px
+    }
+    header .timer p.hours span.seconds:after {
+        left: 430px;
+        font-size: 20px
+    }
+    .welcome h2 {
+        text-align: center
+    }
+    .welcome form {
+        margin: 0 auto;
+        margin-top: 40px
+    }
+    .welcome form label input {
+        width: 410px
+    }
+    .welcome .pluses {
+        margin-top: 80px;
+        margin-bottom: 40px
+    }
+    .table_info table tbody td {
+        font-size: 16px
+    }
+    .table_info table tbody tr.caption td {
+        font-size: 20px
+    }
+    .table_info br {
+        display: none
+    }
+    .btn_up {
+        right: 50px
+    }
+}
+
+@media only screen and (max-width:538px) {
+    header .navbar-brand {
+        margin: 0 auto
+    }
+    header ul.nav {
+        margin: 0 auto
+    }
+    header .timer {
+        width: 400px
+    }
+    header .timer p.hours {
+        font-size: 50px
+    }
+    header .timer p.hours span.days:after {
+        left: 53px;
+        font-size: 12px
+    }
+    header .timer p.hours span.hours:after {
+        left: 136px;
+        font-size: 12px
+    }
+    header .timer p.hours span.minutes:after {
+        left: 216px;
+        font-size: 12px
+    }
+    header .timer p.hours span.seconds:after {
+        left: 301px;
+        font-size: 12px
+    }
+    .table_info table tbody td {
+        font-size: 14px
+    }
+    .table_info table tbody tr.caption td {
+        font-size: 18px
+    }
+    .welcome .pluses {
+        margin-top: 40px;
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .welcome form label input {
+        width: auto
+    }
+    .welcome form .button_wrap button.btn.btn-submit {
+        width: 37%
+    }
+}
+
+@media only screen and (max-width:400px) {
+    header .timer {
+        width: 300px
+    }
+    header .timer p.hours {
+        font-size: 42px
+    }
+    header .timer p.hours span.days:after {
+        left: 23px;
+        bottom: 10px
+    }
+    header .timer p.hours span.hours:after {
+        left: 93px;
+        bottom: 10px
+    }
+    header .timer p.hours span.minutes:after {
+        left: 156px;
+        bottom: 10px
+    }
+    header .timer p.hours span.seconds:after {
+        left: 231px;
+        bottom: 10px
+    }
+    .welcome form .button_wrap button.btn.btn-submit {
+        font-size: 18px
+    }
+    footer p {
+        line-height: 24px
+    }
+}

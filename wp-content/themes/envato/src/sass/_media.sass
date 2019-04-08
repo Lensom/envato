@@ -1,0 +1,319 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width : 1650px)
+	.btn-up
+		right: 150px
+
+
+@media only screen and (max-width : 1200px)
+	/**/
+	.welcome
+		form
+			input
+				width: 310px
+
+	.btn-up
+		right: 40px
+
+	header
+		.icons
+			max-width: 60%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	header
+		.icons
+			top: 30px
+		.timer
+			.time
+				p
+					font-size: 100px
+					padding: 0 20px
+				p.days
+					&:after
+						font-size: 100px
+						bottom: 26px
+						left: 200px
+				p.hours
+					&:after
+						font-size: 100px
+						bottom: 26px
+						left: 350px
+				p.minutes
+					&:after
+						font-size: 100px
+						bottom: 26px
+						right: 193px
+
+	.welcome
+		form
+			width: auto
+			padding: 20px 10px 15px 12px;
+			input
+				width: auto
+				width: 245px
+			h2
+				font-size: 22px
+
+	.table-info
+		table
+			tbody
+				tr
+					th
+						padding: 13px 24px 13px 16px
+					td
+						font-size: 18px
+						&:nth-child(1)
+							padding-right: 0
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	header
+		.icons
+			max-width: 100%
+			top: 37px
+		.timer
+			margin-bottom: 55px
+			.time
+				margin: 0
+				p
+					font-size: 80px
+					padding: 0 10px
+					margin-top: -15px
+				span
+					font-size: 18px
+					margin-top: 20px
+					margin-bottom: 20px
+				p.days
+					&:after
+						font-size: 80px
+						bottom: 40px
+						left: 152px
+				p.hours
+					&:after
+						font-size: 80px
+						bottom: 40px
+						left: 263px
+				p.minutes
+					&:after
+						font-size: 80px
+						bottom: 40px
+						right: 148px
+
+	.welcome
+		h2
+			text-align: center
+		form
+			margin: 0 auto
+			margin-top: 40px
+			input
+				width: 410px
+		.pluses
+			margin-top: 80px
+			margin-bottom: 40px
+
+	.table-info
+		table
+			tbody
+				tr
+					td
+						font-size: 14px
+						padding-left: 10px
+				tr
+					th
+						font-size: 20px
+		br
+			display: none
+
+	.btn-up
+		right: 12px
+
+
+@media only screen and (max-width: 576px)
+	
+	header
+		.timer
+			width: 500px
+			.time
+				p.days
+					&:after
+						bottom: 40px
+						left: 131px
+				p.hours
+					&:after
+						bottom: 40px
+						left: 243px
+				p.minutes
+					&:after
+						bottom: 40px
+						right: 128px
+
+	.btn-up
+		width: 30px
+		height: 30px
+		&:after
+    	width: 20px
+    	height: 20px
+    	border-top: 2px solid #212121
+    	border-left: 2px solid #212121
+
+@media only screen and (max-width : 538px)
+	header
+		.navbar-brand
+			margin: 0 auto
+		ul.nav
+			margin: 0 auto
+		.timer
+			width: 400px
+			.time
+				p
+					font-size: 62px
+					padding: 0 10px
+					margin-top: -15px
+				span
+					font-size: 14px
+				p.days
+					&:after
+						font-size: 60px
+						bottom: 34px
+						left: 103px
+				p.hours
+					&:after
+						font-size: 60px
+						bottom: 34px
+						left: 194px
+				p.minutes
+					&:after
+						font-size: 60px
+						bottom: 34px
+						right: 100px
+
+
+	.table-info
+		table
+			tbody
+				td
+					font-size: 14px
+				tr
+					th
+						font-size: 18px
+
+	.welcome
+		.pluses
+			margin-top: 40px
+			margin-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.welcome
+		form
+			input
+				width: auto
+			.button-wrap
+				button.btn.btn-submit
+					width: 37%
+
+	.table-info
+		table
+			tbody
+				tr
+					td
+						font-size: 12px
+				tr
+					th
+						font-size: 16px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 410px)
+	/**/
+	header
+		.timer
+			width: 300px
+			margin-top: 30px
+			margin-bottom: 20px
+			.time
+				margin-bottom: 0
+				p
+					font-size: 38px
+					padding: 0 10px
+					margin-top: 0
+				span
+					font-size: 12px
+					margin-top: 25px
+				p.days
+					&:after
+						font-size: 40px
+						bottom: 28px
+						left: 79px
+				p.hours
+					&:after
+						font-size: 40px
+						bottom: 28px
+						left: 146px
+				p.minutes
+					&:after
+						font-size: 40px
+						bottom: 28px
+						right: 78px
+	
+	.welcome
+		form
+			.button-wrap
+				button.btn.btn-submit
+					font-size: 18px
+
+	footer
+		p
+			line-height: 24px
+
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio:2),
+screen and (-moz-device-pixel-ratio:2)
+  .google_plus, .linkedin, .tumblr, .twitter, .facebook 
+    background-image: url("../img/iconsx2.png")
+    // background-size: 250px 250px
+    background-size: 640px
+  
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
